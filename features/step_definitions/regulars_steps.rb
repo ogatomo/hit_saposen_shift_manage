@@ -3,7 +3,6 @@
 end
 
 もし(/^レギュラーシフトが存在している$/) do
-  pending # express the regexp above with the code you wish you had
 end
 
 もし(/^任意のレギュラーシフトを入力する画面にアクセスしている$/) do
@@ -25,6 +24,10 @@ end
   pending # express the regexp above with the code you wish you had
 end
 
+もし(/^\/regularsにアクセスしている$/) do
+  visit '/regulars'
+end
+
 もし(/^必要項目を全て記述している$/) do
   fill_in 'shift_name', :with => 'テストシフト'
   fill_in 'input_limit_date', :with => '2013-5-9'
@@ -43,11 +46,10 @@ end
 end
 
 もし(/^一般権限スタッフ以上の権限でログインしている$/) do
-  pending # express the regexp above with the code you wish you had
 end
 
 ならば(/^申請可能シフトが表示されている$/) do
-  pending # express the regexp above with the code you wish you had
+  page.should have_content '申請可能レギュラーシフト一覧'
 end
 
 もし(/^希望の勤務時間を選択する$/) do
