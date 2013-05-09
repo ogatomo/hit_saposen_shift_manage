@@ -1,4 +1,4 @@
-class RegularController < ApplicationController
+class RegularsController < ApplicationController
   
   def index
   end
