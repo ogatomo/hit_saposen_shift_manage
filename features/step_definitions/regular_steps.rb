@@ -1,3 +1,23 @@
+もし(/^レギュラーシフトを作成する画面にアクセスしている$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+もし(/^レギュラーシフトが存在している$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+もし(/^任意のレギュラーシフトを入力する画面にアクセスしている$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+もし(/^任意のレギュラーシフトを編集する画面にアクセスしている$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+もし(/^登録されているレギュラーシフトを一覧表示する画面にアクセスしている$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
 もし(/^リーダー権限スタッフでログインしている$/) do
   pending # express the regexp above with the code you wish you had
 end
