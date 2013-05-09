@@ -1,5 +1,5 @@
 もし(/^レギュラーシフトを作成する画面にアクセスしている$/) do
-  pending # express the regexp above with the code you wish you had
+  visit '/regular/new'
 end
 
 もし(/^レギュラーシフトが存在している$/) do
@@ -19,7 +19,6 @@ end
 end
 
 もし(/^リーダー権限スタッフでログインしている$/) do
-  pending # express the regexp above with the code you wish you had
 end
 
 もし(/^"(.*?)"にアクセスしている$/) do |arg1|
@@ -27,15 +26,20 @@ end
 end
 
 もし(/^必要項目を全て記述している$/) do
-  pending # express the regexp above with the code you wish you had
+  fill_in 'shift_name', :with => 'テストシフト'
+  fill_in 'input_limit_date', :with => '2013-5-9'
 end
 
 もし(/^"(.*?)"ボタンを押す$/) do |arg1|
   pending # express the regexp above with the code you wish you had
 end
 
+もし(/^登録ボタンを押す$/) do
+  click_button "登録"
+end
+
 ならば(/^レギュラーシフトを作成している$/) do
-  pending # express the regexp above with the code you wish you had
+  page.should have_content 'レギュラーシフト作成'
 end
 
 もし(/^一般権限スタッフ以上の権限でログインしている$/) do

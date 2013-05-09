@@ -1,14 +1,16 @@
 <h2>レギュラーシフトを作成する</h2>
-<table border="1">
-  <tr>
-  	<td>レギュラーシフト名</td>
-  	<td></td>
-  </tr>
-  <tr>
-  	<td>入力期限</td>
-  	<td></td>
-  </tr>
-  <tr>
-  	<td colspan="2"></td>
-  </tr>
-</table>
+<form action="/regular">
+	<table class="table table-bordered">
+	  <tr>
+	  	<td>レギュラーシフト名</td>
+	  	<td><input type="text" name="shift_name" id="shift_name"></td>
+	  </tr>
+	  <tr>
+	  	<td>入力期限</td>
+	  	<td><input type="text" name="input_limit_date" id="input_limit_date"></td>
+	  </tr>
+	  <tr>
+	  	<td colspan="2"><input type="submit" value="登録" id="submit" /></td>
+	  </tr>
+	</table>
+</form>
