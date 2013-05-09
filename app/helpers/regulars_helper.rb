@@ -1,2 +1,2 @@
-module RegularHelper
+module RegularsHelper
 end

@@ -7,6 +7,6 @@ class RegularsController < ApplicationController
   end
 
   def create
-  	redirect_to regular_index_path, notice: 'レギュラーシフトを作成しました'
+  	redirect_to regulars_path, notice: 'レギュラーシフトを作成しました'
   end
 end

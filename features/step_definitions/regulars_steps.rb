@@ -1,5 +1,5 @@
 もし(/^レギュラーシフトを作成する画面にアクセスしている$/) do
-  visit '/regular/new'
+  visit '/regulars/new'
 end
 
 もし(/^レギュラーシフトが存在している$/) do
