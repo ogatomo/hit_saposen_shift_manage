@@ -1,7 +1,8 @@
 hit_saposen_shift_manage
 ========================
 
-[![Build Status](https://travis-ci.org/moriC/hit_saposen_shift_manage.png)](https://travis-ci.org/moriC/hit_saposen_shift_manage)
+[![Build Status](https://travis-ci.org/moriC/hit_saposen_shift_manage.png)](https://travis-ci.org/moriC/hit_saposen_shift_manage)  
+[![Code Climate](https://codeclimate.com/github/moriC/hit_saposen_shift_manage.png)](https://codeclimate.com/github/moriC/hit_saposen_shift_manage)  
 広島工業大学情報システムメディアセンターサポートセンターシフト管理システム
 
 
