@@ -9,6 +9,9 @@ class RegularsController < ApplicationController
   def edit
   end
 
+  def entry
+  end
+
   def create
   	redirect_to regulars_path, notice: 'レギュラーシフトを作成しました'
   end

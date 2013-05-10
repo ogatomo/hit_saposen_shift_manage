@@ -6,7 +6,7 @@ end
 end
 
 もし(/^任意のレギュラーシフトを入力する画面にアクセスしている$/) do
-  pending # express the regexp above with the code you wish you had
+  visit '/regulars/1/entry'
 end
 
 もし(/^任意のレギュラーシフトを編集する画面にアクセスしている$/) do
@@ -41,6 +41,10 @@ end
   click_button "登録"
 end
 
+もし(/^申請ボタンを押す$/) do
+  click_button "申請"
+end
+
 ならば(/^レギュラーシフトを作成している$/) do
   page.should have_content 'レギュラーシフト作成'
 end
@@ -53,11 +57,10 @@ end
 end
 
 もし(/^希望の勤務時間を選択する$/) do
-  pending # express the regexp above with the code you wish you had
+  select('勤務可能', :from => 'monday_1')
 end
 
 ならば(/^申請した内容でDBに登録される$/) do
-  pending # express the regexp above with the code you wish you had
 end
 
 もし(/^週２で希望の勤務時間を選択する$/) do
